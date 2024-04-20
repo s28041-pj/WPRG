@@ -147,10 +147,10 @@ function showReservationSummary($error, $numberOfGuests)
         echo "<h2>Reservation summary:</h2>";
         echo "<p>Number of guests: " . $_POST["num_of_guests"] . "</p>";
         for($i=1; $i<=$numberOfGuests; $i++){
-            $imie = $_POST["first_name$i"];
-            $nazwisko = $_POST["last_name$i"];
-            echo "Imię osoby $i: $imie<br>";
-            echo "Nazwisko osoby $i: $nazwisko<br>";
+            $firstName = $_POST["first_name$i"];
+            $lastName = $_POST["last_name$i"];
+            echo "First name person $i: $firstName<br>";
+            echo "Last name person $i: $lastName<br>";
         }
         echo "<p>Address: " . $_POST["address"] . "</p>";
         echo "<p>Credit card number: " . $_POST["credit_card"] . "</p>";
